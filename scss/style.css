@@ -149,16 +149,37 @@ button:focus, button:active, button:hover, button:focus-visible {
   margin-bottom: 10px !important;
 }
 
+.mt-10 {
+  margin-top: 10px !important;
+}
+
 .card {
   background-color: #fff;
   border-radius: 12px;
   margin-bottom: 16px;
+}
+.card--area .card__change {
+  padding-bottom: 16px;
+}
+.card--area .card__change,
+.card--area .card__change-second {
+  border: none;
+}
+.card--area .card__change-first,
+.card--area .card__change-second {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .card__head {
   padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.card__head--border {
+  border-bottom: 1px solid rgba(34, 49, 63, 0.1);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .card__title {
   font-weight: 700;
@@ -194,6 +215,11 @@ button:focus, button:active, button:hover, button:focus-visible {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+}
+.card__change-first--compare {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
 }
 .card__change-second {
   padding: 12px 16px;
@@ -314,6 +340,30 @@ button:focus, button:active, button:hover, button:focus-visible {
   font-size: 12px;
   line-height: 18px;
   text-align: center;
+}
+.ek__tab-view {
+  height: 50px;
+  background: #fff;
+  box-shadow: 0px 1px 0px rgba(1, 18, 34, 0.05);
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.ek__tab-view-btn {
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(1, 18, 34, 0.55);
+}
+.ek__tab-view-btn--active {
+  color: #2169E8;
+  border-bottom: 2px solid #2169E8;
 }
 
 .main {

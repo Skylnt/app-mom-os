@@ -29,4 +29,28 @@
         line-height: 18px;
         text-align: center;
     }
+    &__tab-view {
+        height: 50px;
+        background: $white;
+        box-shadow: 0px 1px 0px rgba(1, 18, 34, 0.05);
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__tab-view-btn {
+        height: 50px;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: $gray-opacity;
+        &--active{
+            color: $blue-primary;
+            border-bottom: 2px solid $blue-primary;
+        }
+    }
 }

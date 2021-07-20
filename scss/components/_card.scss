@@ -2,11 +2,30 @@
     background-color: $white;
     border-radius: 12px;
     margin-bottom: 16px;
+    &--area {
+        .card__change {
+            padding-bottom: 16px;
+        }
+        .card__change,
+        .card__change-second {
+            border: none;
+        }
+        .card__change-first,
+        .card__change-second {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
     &__head {
         padding: 16px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &--border{
+            border-bottom: 1px solid $gray-border-color;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+        }
     }
     &__title {
         font-weight: 700;
@@ -41,6 +60,11 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 21px;
+        }
+        &--compare {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
         }
     }
     &__change-second {

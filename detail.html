@@ -11,17 +11,14 @@
 </head>
 
 <body>
+    <div class="ek__tab-view">
+        <button type="button" class="ek__tab-view-btn ek__tab-view-btn--active">Summary</button>
+        <button type="button" class="ek__tab-view-btn">Related KPI</button>
+        <button type="button" class="ek__tab-view-btn">Table</button>
+        <button type="button" class="ek__tab-view-btn">Comments</button>
+    </div>
+
     <main class="main">
-        <div class="ek__tab">
-            <button type="button" class="ek__tab-btn ek__tab-btn--active">MTD</button>
-            <button type="button" class="ek__tab-btn">This Week</button>
-            <button type="button" class="ek__tab-btn">Last Month</button>
-        </div>
-
-        <div class="ek__update-at">
-            Updated 23:00:00, 2021/06/16
-        </div>
-
         <div class="card">
             <div class="card__head">
                 <div class="card__title">GMV Closed</div>
@@ -95,10 +92,20 @@
             </div>
         </div>
 
-        
+        <div class="card">
+            <div class="card__head card__head--border">
+                <div class="card__title">GMV Actual vs Forecast</div>
+            </div>
+
+            <div class="cart__chart">
+                <div id="highcharts"></div>
+            </div>
+        </div>
     </main>
 
     <script src="./vendors/jquery/jquery.min.js"></script>
+    <script src="./vendors/highcharts/highcharts.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
