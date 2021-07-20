@@ -1,0 +1,32 @@
+.ek {
+    &__tab {
+        background-color: $white;
+        padding: 8px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__tab-btn {
+        background-color: transparent;
+        border-radius: 3px;
+        height: 45px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: $black-primary;
+        text-align: center;
+        min-width: 33%;
+        &--active {
+            background: $blue-primary;
+            color: $white;
+        }
+    }
+    &__update-at {
+        margin: 16px 0;
+        color: $black-primary;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+    }
+}
