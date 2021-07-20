@@ -281,8 +281,11 @@ button:focus, button:active, button:hover, button:focus-visible {
   line-height: 18px;
   color: #22313F;
 }
-.card__list-item--name, .card__list-item--change {
-  width: 40%;
+.card__list-item--name {
+  width: 35%;
+}
+.card__list-item--change {
+  width: 45%;
 }
 .card__list-item--all {
   width: 20%;

@@ -127,9 +127,11 @@
             line-height: 18px;
             color: $black-primary;
         }
-        &--name,
+        &--name {
+            width: 35%;
+        }
         &--change {
-            width: 40%;
+            width: 45%;
         }
         &--all {
             width: 20%;
