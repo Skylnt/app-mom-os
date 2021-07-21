@@ -145,6 +145,10 @@ button:focus, button:active, button:hover, button:focus-visible {
   border: none;
 }
 
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
 .mb-10 {
   margin-bottom: 10px !important;
 }
@@ -170,6 +174,38 @@ button:focus, button:active, button:hover, button:focus-visible {
   padding-top: 0;
   padding-bottom: 0;
 }
+.card--table {
+  width: 100%;
+}
+.card--table thead {
+  border-bottom: 1px solid rgba(34, 49, 63, 0.1);
+}
+.card--table th {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(1, 18, 34, 0.55);
+  padding: 16px 5px;
+}
+.card--table th:first-child {
+  width: calc(100% - 150px);
+}
+.card--table th:not(:first-child) {
+  width: 50px;
+}
+.card--table tr td {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(1, 18, 34, 0.55);
+  padding: 10px 5px;
+}
+.card--table tr td:first-child {
+  width: calc(100% - 150px);
+}
+.card--table tr td:not(:first-child) {
+  width: 50px;
+}
 .card__head {
   padding: 16px;
   display: flex;
@@ -190,9 +226,10 @@ button:focus, button:active, button:hover, button:focus-visible {
 .card__change {
   border-top: 1px solid rgba(34, 49, 63, 0.1);
   border-bottom: 1px solid rgba(34, 49, 63, 0.1);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .card__change-first {
   padding: 12px 16px;
@@ -266,7 +303,7 @@ button:focus, button:active, button:hover, button:focus-visible {
   padding-left: 16px;
 }
 .card__list-item--name::before {
-  content: '';
+  content: "";
   background-color: rgba(34, 49, 63, 0.1);
   width: 6px;
   height: 6px;
@@ -299,19 +336,31 @@ button:focus, button:active, button:hover, button:focus-visible {
 }
 
 .color-blue-primary {
-  color: #2169E8;
+  color: #2169E8 !important;
 }
 
 .color-green-primary {
-  color: #00BC3C;
+  color: #00BC3C !important;
 }
 
 .color-red-primary {
-  color: #DC2323;
+  color: #DC2323 !important;
 }
 
 .color-gray-primary {
-  color: #6A7178;
+  color: #6A7178 !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
 }
 
 .ek__tab {

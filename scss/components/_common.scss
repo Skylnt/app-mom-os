@@ -1,12 +1,22 @@
 .color-blue-primary{
-    color: $blue-primary;
+    color: $blue-primary !important;
 }
 .color-green-primary{
-    color: $green-primary;
+    color: $green-primary !important;
 }
 .color-red-primary{
-    color: $red-primary;
+    color: $red-primary !important;
 }
 .color-gray-primary{
-    color: $gray-primary;
+    color: $gray-primary !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+.text-left{
+    text-align: left !important;
+}
+.text-right{
+    text-align: right !important;
 }
