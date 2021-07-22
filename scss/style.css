@@ -503,5 +503,31 @@ button:focus, button:active, button:hover, button:focus-visible {
   outline: none;
   margin: 0 6px;
 }
+.main__fixed-comment {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.main__fixed-comment input {
+  border: none;
+  height: 100%;
+  width: calc(100% - 50px);
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 14px;
+  color: #22313F;
+}
+.main__fixed-comment input:focus-within, .main__fixed-comment input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.main__fixed-comment button {
+  margin: 0 6px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
 
 /*# sourceMappingURL=style.css.map */

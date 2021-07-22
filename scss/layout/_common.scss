@@ -19,7 +19,7 @@
         color: $gray-opacity;
         font-size: 14px;
         line-height: 21px;
-        button{
+        button {
             color: $blue-primary;
             font-size: 14px;
             line-height: 21px;
@@ -27,6 +27,33 @@
             border: none;
             outline: none;
             margin: 0 6px;
+        }
+    }
+    &__fixed-comment {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        input {
+            border: none;
+            height: 100%;
+            width: calc(100% - 50px);
+            padding-left: 16px;
+            padding-right: 16px;
+            font-size: 14px;
+            color: $black-primary;
+            &:focus-within,
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        button {
+            margin: 0 6px;
+            background: transparent;
+            border: none;
+            outline: none;
         }
     }
 }
