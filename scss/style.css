@@ -181,7 +181,7 @@ button:focus, button:active, button:hover, button:focus-visible {
   border-bottom: 1px solid rgba(34, 49, 63, 0.1);
 }
 .card--table th {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 12px;
   line-height: 18px;
   color: rgba(1, 18, 34, 0.55);
@@ -189,22 +189,75 @@ button:focus, button:active, button:hover, button:focus-visible {
 }
 .card--table th:first-child {
   width: calc(100% - 150px);
+  padding-left: 16px;
+}
+.card--table th:last-child {
+  padding-right: 16px;
 }
 .card--table th:not(:first-child) {
   width: 50px;
 }
-.card--table tr td {
+.card--table tbody tr td {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   color: rgba(1, 18, 34, 0.55);
   padding: 10px 5px;
+  vertical-align: middle;
 }
-.card--table tr td:first-child {
+.card--table tbody tr td:first-child {
   width: calc(100% - 150px);
+  padding-left: 16px;
 }
-.card--table tr td:not(:first-child) {
+.card--table tbody tr td:first-child:not(.td-name) {
+  padding-left: 30px;
+  position: relative;
+}
+.card--table tbody tr td:first-child:not(.td-name)::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(1, 18, 34, 0.55);
+  border-radius: 2px;
+  z-index: 1;
+}
+.card--table tbody tr td:last-child {
+  padding-right: 16px;
+}
+.card--table tbody tr td:not(:first-child) {
   width: 50px;
+}
+.card--table tbody tr td.td-bold {
+  color: #22313F;
+}
+.card--table-section {
+  border-top: 1px solid rgba(34, 49, 63, 0.1);
+}
+.card--table-section:first-child {
+  border: none;
+}
+.card--table-section td {
+  padding-top: 16px !important;
+}
+.card__tb-item {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(1, 18, 34, 0.55);
+  padding: 16px 5px;
+}
+.card__tb-item:not(:first-child) {
+  width: 50px;
+}
+.card__tb-item:first-child {
+  width: calc(100% - 150px);
+  padding-left: 16px;
+}
+.card__tb-item:last-child {
+  padding-right: 16px;
 }
 .card__head {
   padding: 16px;
@@ -420,6 +473,35 @@ button:focus, button:active, button:hover, button:focus-visible {
 
 .main {
   padding: 12px 16px;
+}
+.main__fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  border-top: 1px solid rgba(34, 49, 63, 0.1);
+  width: 100%;
+  height: 52px;
+  z-index: 10;
+}
+.main__fixed-browse {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: rgba(1, 18, 34, 0.55);
+  font-size: 14px;
+  line-height: 21px;
+}
+.main__fixed-browse button {
+  color: #2169E8;
+  font-size: 14px;
+  line-height: 21px;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 0 6px;
 }
 
 /*# sourceMappingURL=style.css.map */
